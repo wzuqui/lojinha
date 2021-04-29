@@ -1,6 +1,6 @@
 <div class="produto" *ngFor="let produto of produtos | async">
   <h4>{{produto.nome}}</h4>
-  <img src="/assets/produtos/{{ produto.foto }}" [alt]="produto.nome">
+  <img src="assets/produtos/{{ produto.foto }}" [alt]="produto.nome">
   <a [routerLink]="['/produto', produto.id, 'adicionar']">
     Adicionar
   </a>
