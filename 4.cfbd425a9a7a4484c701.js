@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{jkDv:function(n,o,t){"use strict";t.r(o),t.d(o,"AdminModule",function(){return c});var e=t("ofXK"),r=t("fXoL");let c=(()=>{class n{}return n.\u0275fac=function(o){return new(o||n)},n.\u0275mod=r.Gb({type:n}),n.\u0275inj=r.Fb({imports:[[e.c]]}),n})()}}]);

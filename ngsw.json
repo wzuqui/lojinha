@@ -1,0 +1,97 @@
+{
+  "configVersion": 1,
+  "timestamp": 1619734139730,
+  "index": "/lojinha/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/lojinha/4.cfbd425a9a7a4484c701.js",
+        "/lojinha/favicon.ico",
+        "/lojinha/index.html",
+        "/lojinha/main.d0cccdda0d4edb31c637.js",
+        "/lojinha/manifest.webmanifest",
+        "/lojinha/polyfills.918bfd9e2b7365f19867.js",
+        "/lojinha/runtime.687d5a02f4bd61478bc2.js",
+        "/lojinha/styles.3c48832ae379239c1318.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/lojinha/assets/buscar.svg",
+        "/lojinha/assets/icons/icon-128x128.png",
+        "/lojinha/assets/icons/icon-144x144.png",
+        "/lojinha/assets/icons/icon-152x152.png",
+        "/lojinha/assets/icons/icon-192x192.png",
+        "/lojinha/assets/icons/icon-384x384.png",
+        "/lojinha/assets/icons/icon-512x512.png",
+        "/lojinha/assets/icons/icon-72x72.png",
+        "/lojinha/assets/icons/icon-96x96.png",
+        "/lojinha/assets/logo.svg",
+        "/lojinha/assets/produtos/coca-cola-cafe-plus-espresso-lata-220ml.jpg",
+        "/lojinha/assets/produtos/croissant-creme.jpg",
+        "/lojinha/dxicons.ade87a8c195f5857dcf3.woff",
+        "/lojinha/dxicons.d601b53ecf670dd37f5c.woff2",
+        "/lojinha/dxicons.d8b3a23c53b0d8228c97.ttf"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/lojinha/4.cfbd425a9a7a4484c701.js": "547fe4bb0f4d7aff7c8ac6be24b668932b627711",
+    "/lojinha/assets/buscar.svg": "b3b10a520aa5bd635897cdd7112dab6a33fc6d05",
+    "/lojinha/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/lojinha/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/lojinha/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/lojinha/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/lojinha/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/lojinha/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/lojinha/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/lojinha/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/lojinha/assets/logo.svg": "e924c2e96b972e3b77b23a9ba16b3f7455e545fc",
+    "/lojinha/assets/produtos/coca-cola-cafe-plus-espresso-lata-220ml.jpg": "65bd85d0d6e2248d8210ba6819cf3f348199a337",
+    "/lojinha/assets/produtos/croissant-creme.jpg": "b097341c02e8be280401226021b01147b037bc4d",
+    "/lojinha/dxicons.ade87a8c195f5857dcf3.woff": "49e11ed241ec673b87f450268d77179b385e3641",
+    "/lojinha/dxicons.d601b53ecf670dd37f5c.woff2": "613d7de00553ccc4eb85aa79c3629f02aee19fd3",
+    "/lojinha/dxicons.d8b3a23c53b0d8228c97.ttf": "61f74fc5fde363001046bd023497b759c35a8d55",
+    "/lojinha/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/lojinha/index.html": "b45a5610f39722fe5b2c5a16225f1562b65a245c",
+    "/lojinha/main.d0cccdda0d4edb31c637.js": "d3717dddb37be8261252d0b98eed88894603a63f",
+    "/lojinha/manifest.webmanifest": "b2353b16311f6082432e1cec7e849a50eaac6d40",
+    "/lojinha/polyfills.918bfd9e2b7365f19867.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/lojinha/runtime.687d5a02f4bd61478bc2.js": "3a1580deb8d9626bda324c030a1e6043087cb321",
+    "/lojinha/styles.3c48832ae379239c1318.css": "134fa846df9397b0da2b8d5d810a15656c1c5c25"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
