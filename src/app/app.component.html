@@ -2,7 +2,7 @@
   <a href="#">
     <img src="/assets/logo.svg" alt="Lojinha - Comprar on-line">
   </a>
-  <nav>
+  <nav [class.ativo]="ativo">
     <a [routerLink]="['/carrinho']" routerLinkActive="router-link-active">Carrinho</a>
     <a [routerLink]="['/produtos']" routerLinkActive="router-link-active">Produtos</a>
 
@@ -13,7 +13,7 @@
       <input type="text">
     </div>
   </nav>
-  <button>☰</button>
+  <button (click)="toogle()">☰</button>
 </header>
 <section>
   <router-outlet></router-outlet>

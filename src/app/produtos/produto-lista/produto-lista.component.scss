@@ -1,38 +1,47 @@
-.produto {
-  align-items: center;
-  background: var(--branco);
+:host {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2rem;
-  padding: 2rem;
-  width: 30rem;
+  flex-wrap: wrap;
+  align-items: self-start;
+  flex-grow: 1;
 
-  > h4 {
-    width: 100%;
-    font-size: 1.6rem;
-  }
-  
-  > img {
-    margin-top: 2rem;
-    font-size: 1.4rem;
-    width: 100%;
-  }
+  .produto {
+    align-items: center;
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    width: 30rem;
 
-  > a {
-    background: var(--cinza);
-    border-radius: 1rem;
-    border: none;
-    color: var(--preto);
-    font-weight: 700;
-    line-height: 4rem;
-    margin-top: 2rem;
-    padding: 0 2rem;
-    text-decoration: none;
-    transition: .2s;
+    > h4 {
+      width: 100%;
+      font-size: 1.6rem;
+      font-family: "Montserrat";
+      font-weight: 600;
+    }
 
-    &:hover {
-      background: var(--branco-link-hover);
+    > img {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      width: 100%;
+    }
+
+    > a {
+      background: var(--cinza);
+      border-radius: 1rem;
+      border: none;
+      color: var(--preto);
+      font-weight: 700;
+      line-height: 4rem;
+      margin-top: 2rem;
+      padding: 0 2rem;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        background: var(--branco-link-hover);
+      }
     }
   }
 }

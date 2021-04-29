@@ -1,10 +1,9 @@
 header {
   align-items: center;
-  background-color: var(--header-color-background);
-  color: var(--header-color-text);
+  background-color: #DDD;
   display: flex;
   justify-content: space-between;
-  padding: .5rem;
+  padding: 0.5rem;
   position: sticky;
   top: 0;
 
@@ -20,25 +19,26 @@ header {
     justify-content: space-between;
 
     > a {
-      border-radius: 2.0rem;
+      border-radius: 2rem;
       color: var(--header-nav-link-color-text);
       display: inline-block;
       font-size: 1.6rem;
       font-weight: 500;
       height: 4rem;
-      letter-spacing: -.1rem;
+      letter-spacing: -0.1rem;
       line-height: 4rem;
       margin: 0 1.6rem;
       padding: 0 2rem;
       text-decoration: none;
       text-transform: uppercase;
-      transition: .2s;
+      transition: 0.2s;
 
       &:hover {
-        background-color: var(--header-nav-link-color-background-hover)
+        background-color: var(--header-nav-link-color-background-hover);
       }
 
       &.router-link-active {
+        background-color: var(--header-nav-link-color-background-hover);
         font-weight: bold;
       }
     }
@@ -94,4 +94,54 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2rem;
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header > a {
+    height: 6rem;
+    display: flex;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+    padding-bottom: 1.6rem;
+  }
+
+  header nav.ativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  header nav .buscar {
+    position: relative;
+    padding: 1.6rem;
+    width: 100%;
+  }
+
+  header nav .buscar div {
+    right: 3rem;
+  }
+
+  header > button {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
