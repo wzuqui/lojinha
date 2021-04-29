@@ -1,9 +1,12 @@
 {
   "name": "lojinha",
   "version": "0.0.0",
+  "browser": {
+    "fs": false
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

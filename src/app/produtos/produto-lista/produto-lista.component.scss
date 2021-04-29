@@ -1,0 +1,38 @@
+.produto {
+  align-items: center;
+  background: var(--branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+  width: 30rem;
+
+  > h4 {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  
+  > img {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  > a {
+    background: var(--cinza);
+    border-radius: 1rem;
+    border: none;
+    color: var(--preto);
+    font-weight: 700;
+    line-height: 4rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    transition: .2s;
+
+    &:hover {
+      background: var(--branco-link-hover);
+    }
+  }
+}

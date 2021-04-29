@@ -1,10 +1,9 @@
-<h2>PRODUTOS</h2>
-<ul class="produtos">
-  <li *ngFor="let produto of produtos| async"
-    [class.selected]="produto.id === selectedId">
-    <a [routerLink]="['/produto', produto.id]">
-      <span class="badge">{{ produto.id }}</span>{{ produto.nome }}
-    </a>
-  </li>
-</ul>
 
+
+<div class="produto" *ngFor="let produto of produtos | async">
+  <h4>{{produto.nome}}</h4>
+  <img src="/assets/produtos/{{ produto.foto }}" [alt]="produto.nome">
+  <a [routerLink]="['/produto', produto.id, 'adicionar']">
+    Adicionar
+  </a>
+</div>

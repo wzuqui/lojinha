@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,4 +10,26 @@
 
 html, body {
   height: 100%;
+}
+
+:root {
+  --branco-link-hover: #eee;
+  --branco: #fff;
+  --cinza: #ddd;
+  --preto: #333;
+
+  --color-background: var(--branco);
+  --color-text: var(--preto);
+  --header-color-background: var(--branco);
+  --header-color-text: var(--preto);
+  --footer-color-background: var(--branco);
+  --footer-color-text: var(--preto);
+  --header-nav-link-color-text: var(--preto);
+  --header-nav-link-color-background-hover: var(--branco-link-hover);
+
+  font-size: 60%;
+}
+
+body {
+  background-color: #eee;
 }

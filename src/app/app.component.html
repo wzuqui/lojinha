@@ -1,0 +1,23 @@
+<header>
+  <a href="#">
+    <img src="/assets/logo.svg" alt="Lojinha - Comprar on-line">
+  </a>
+  <nav>
+    <a [routerLink]="['/carrinho']" routerLinkActive="router-link-active">Carrinho</a>
+    <a [routerLink]="['/produtos']" routerLinkActive="router-link-active">Produtos</a>
+
+    <div class="buscar">  
+      <div>
+        <img src="/assets/buscar.svg" alt="Buscar">
+      </div>
+      <input type="text">
+    </div>
+  </nav>
+  <button>☰</button>
+</header>
+<section>
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  <p>Desenvolvido por Willian Luis Zuqui</p>
+</footer>
