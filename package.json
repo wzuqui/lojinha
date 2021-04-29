@@ -11,7 +11,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pwa": "http-server -p 8080 -c-1 ./dist/lojinha"
+    "pwa": "http-server -p 8080 -c-1 ./dist/lojinha",
+    "pages": "ng deploy --base-href=/lojinha/"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +25,6 @@
     "@angular/platform-browser-dynamic": "~11.2.9",
     "@angular/router": "~11.2.9",
     "@angular/service-worker": "~11.2.9",
-    "@po-ui/ng-storage": "^4.12.0",
     "devextreme": "20.2.6",
     "devextreme-angular": "20.2.6",
     "rxjs": "~6.6.0",
@@ -37,6 +37,7 @@
     "@angular/compiler-cli": "~11.2.9",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "codelyzer": "^6.0.0",
     "http-server": "^0.12.3",
     "jasmine-core": "~3.6.0",
