@@ -1,8 +1,9 @@
 :host {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  align-items: self-start;
   flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
 
   .produto {
     align-items: center;

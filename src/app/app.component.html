@@ -25,6 +25,7 @@
       <span>Produtos</span>
     </button>
     <button [routerLink]="['/carrinho']" routerLinkActive="router-link-active">
+      <span class="total" *ngIf="total | async">{{ total | async}}</span>
       <fa-icon [icon]="faShoppingCart"></fa-icon>
       <span>Carrinho</span>
     </button>

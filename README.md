@@ -1,27 +1,51 @@
-# Lojinha
+<h1 align="center">Welcome to Lojinha 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.7--rc-blue.svg?cacheSeconds=2592000" />
+  <a href="https://opensource.org/licenses/MIT" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+> Uma lojinha para controlar minhas comprinhas, com geração de relatório por WhatsApp, para rodar em PWA no iOS
 
-## Development server
+### 🏠 [Homepage](https://wzuqui.github.io/lojinha/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### ✨ [Demo](https://wzuqui.github.io/lojinha/)
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+yarn install
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```sh
+yarn start
+```
 
-## Running unit tests
+## Run tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+yarn pages
+```
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+👤 **Willian Luis Zuqui**
 
-## Further help
+* Website: https://github.com/wzuqui
+* Github: [@wzuqui](https://github.com/wzuqui)
+* LinkedIn: [@willian-zuqui-470830192](https://linkedin.com/in/willian-zuqui-470830192)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2021 [Willian Luis Zuqui](https://github.com/wzuqui).<br />
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

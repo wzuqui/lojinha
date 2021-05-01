@@ -164,18 +164,29 @@ footer {
     flex-direction: row;
 
     > button {
+      align-items: center;
+      background-color: transparent;
+      border: none;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      border: none;
-      background-color: transparent;
+      padding: 1.5rem 1rem 1rem 1rem;
+      position: relative;
 
       &.router-link-active {
         font-weight: bold;
       }
     }
   }
+}
+
+.total {
+  background: #ffffffb8;
+  border-radius: 45%;
+  font-weight: 500;
+  padding: .3rem .8rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
 }
 
 .versao {

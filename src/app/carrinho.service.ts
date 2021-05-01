@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Historico } from './historico';
 import { Produto } from './produto';
 
@@ -10,6 +11,7 @@ export class CarrinhoService {
   public carrinhoSave!: (value: Record<number, Produto>) => void;
   public historicos!: Historico[];
   public historicosSave!: (value: Historico[]) => void;
+  private _total = new BehaviorSubject<number>(0);
 
   constructor() {
     this._cargao();
@@ -25,7 +27,7 @@ export class CarrinhoService {
       item.quantidade++;
     }
 
-    this.carrinhoSave(this.carrinho);
+    this._salvarCarrinho();
   }
 
   public finalizar(): void {
@@ -40,12 +42,24 @@ export class CarrinhoService {
     this.historicosSave(this.historicos);
 
     this.carrinho = {};
-    this.carrinhoSave(this.carrinho);
+    this._salvarCarrinho();
   }
 
   public remover(produto: Produto): void {
     delete this.carrinho[produto.id];
-    this.carrinhoSave(this.carrinho);
+    this._salvarCarrinho();
+  }
+
+  public total(): Observable<number> {
+    return this._total.asObservable();
+  }
+
+  private _atualizarTotal(): void {
+    this._total.next(
+      Object.values(this.carrinho)
+        .map((p) => p.quantidade)
+        .reduce((acc, curr) => acc + curr, 0)
+    );
   }
 
   private _cargao(): void {
@@ -53,10 +67,17 @@ export class CarrinhoService {
       localStorage<Record<number, Produto>>('carrinho') ?? {};
     this.carrinho = carrinho ?? {};
     this.carrinhoSave = carrinhoSave;
+    this._atualizarTotal();
+
 
     const [historico, historicoSave] = localStorage<Historico[]>('historico');
     this.historicos = historico ?? [];
     this.historicosSave = historicoSave;
+  }
+
+  private _salvarCarrinho(): void {
+    this.carrinhoSave(this.carrinho);
+    this._atualizarTotal();
   }
 }
 

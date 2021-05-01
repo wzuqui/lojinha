@@ -12,7 +12,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pwa": "http-server -p 8080 -c-1 ./dist/lojinha",
-    "pages": "ng deploy --base-href=/lojinha/"
+    "pages": "ng deploy --base-href=/lojinha/",
+    "readme": "npx readme-md-generator"
   },
   "private": true,
   "dependencies": {
