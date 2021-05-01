@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619843591427,
+  "timestamp": 1619844594864,
   "index": "/lojinha/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/lojinha/favicon.ico",
         "/lojinha/index.html",
-        "/lojinha/main.d2fd0234fb95ecdad6dc.js",
+        "/lojinha/main.aa5884aca63ab77ed43e.js",
         "/lojinha/manifest.webmanifest",
         "/lojinha/polyfills.918bfd9e2b7365f19867.js",
         "/lojinha/runtime.442d6bd8409cee682c44.js",
@@ -102,8 +102,8 @@
     "/lojinha/dxicons.d601b53ecf670dd37f5c.woff2": "613d7de00553ccc4eb85aa79c3629f02aee19fd3",
     "/lojinha/dxicons.d8b3a23c53b0d8228c97.ttf": "61f74fc5fde363001046bd023497b759c35a8d55",
     "/lojinha/favicon.ico": "adf4316e162d5e55385665986c5693a51688af34",
-    "/lojinha/index.html": "be0ebcd70873d3b951d58508d993f99d77b8a81e",
-    "/lojinha/main.d2fd0234fb95ecdad6dc.js": "3d98a5353780d30ceb84ab704f7ddbe5ac774135",
+    "/lojinha/index.html": "b145f63386f9b6c1a9763f42219eb3d864d25b5a",
+    "/lojinha/main.aa5884aca63ab77ed43e.js": "d1240065c7f5315faa39387b0d397a06b8e7f99b",
     "/lojinha/manifest.webmanifest": "bd9347bf2d697c9484314b9e513b6cf8403da0b7",
     "/lojinha/polyfills.918bfd9e2b7365f19867.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "/lojinha/runtime.442d6bd8409cee682c44.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
