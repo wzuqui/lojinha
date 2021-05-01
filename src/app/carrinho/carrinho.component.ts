@@ -39,10 +39,7 @@ export class CarrinhoComponent implements OnInit {
       .map((item) => `${item.quantidade} X ${item.nome}`)
       .join(`\r\n`);
 
-    window.open(
-      'https://api.whatsapp.com/send?phone=&text=' + encodeURIComponent(texto),
-      '_blank'
-    );
+    window.open('whatsapp://send?phone=&text=' + encodeURIComponent(texto));
   }
 
   public finalizar(): void {
