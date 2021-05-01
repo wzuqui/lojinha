@@ -6,7 +6,7 @@
     <a [routerLink]="['/carrinho']" routerLinkActive="router-link-active">Carrinho</a>
     <a [routerLink]="['/produtos']" routerLinkActive="router-link-active">Produtos</a>
 
-    <div class="buscar">  
+    <div class="buscar">
       <div>
         <img src="assets/buscar.svg" alt="Buscar">
       </div>
@@ -19,5 +19,14 @@
   <router-outlet></router-outlet>
 </section>
 <footer>
-  <p>Desenvolvido por Willian Luis Zuqui</p>
+  <nav>
+    <button [routerLink]="['/produtos']" routerLinkActive="router-link-active">
+      <fa-icon [icon]="faHome"></fa-icon>
+      <span>Produtos</span>
+    </button>
+    <button [routerLink]="['/carrinho']" routerLinkActive="router-link-active">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+      <span>Carrinho</span>
+    </button>
+  </nav>
 </footer>

@@ -1,0 +1,7 @@
+<div class="produto" *ngFor="let produto of produtos">
+  <h4>{{produto.nome}}</h4>
+  <img src="assets/produtos/{{ produto.foto }}" [alt]="produto.nome">
+  <button (click)="adicionar(produto)">
+    Adicionar
+  </button>
+</div>

@@ -1,10 +1,11 @@
 header {
   align-items: center;
-  background-color: #DDD;
+  background-color: #ddd;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
 
   > a {
@@ -88,12 +89,7 @@ section {
 }
 
 footer {
-  align-items: center;
-  background-color: var(--footer-color-background);
-  color: var(--footer-color-text);
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+  display: none;
 }
 
 @media screen and (max-width: 770px) {
@@ -143,5 +139,41 @@ footer {
     position: absolute;
     left: 0;
     top: 0;
+  }
+
+  section {
+    padding-bottom: 8rem;
+  }
+
+  footer {
+    align-items: center;
+    background-color: var(--footer-color-background);
+    bottom: 0;
+    color: var(--footer-color-text);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+
+footer {
+  > nav {
+    display: flex;
+    flex-direction: row;
+
+    > button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      border: none;
+      background-color: transparent;
+
+      &.router-link-active {
+        font-weight: bold;
+      }
+    }
   }
 }

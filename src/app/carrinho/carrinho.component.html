@@ -1,0 +1,46 @@
+<ng-template [ngIf]="itens.length > 0">
+  <h3>Carrinho:</h3>
+
+  <div class="card">
+    <h4>em aberto</h4>
+
+    <div class="itens">
+      <div class="item" *ngFor="let item of itens">
+        <div class="quantidade">{{ item.quantidade }}</div>
+        <div class="nome">{{ item.nome }}</div>
+        <button (click)="remover($event, item)">
+          <fa-icon [icon]="faTimes"></fa-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="acoes">
+      <button (click)="finalizar()">Finalizar</button>
+      <button (click)="enviar($event, itens)">
+        <fa-icon [icon]="faPaperPlane"></fa-icon>
+        Enviar
+      </button>
+    </div>
+  </div>
+</ng-template>
+
+
+<h3>Histórico:</h3>
+
+<div class="card" *ngFor="let historico of historicos">
+  <h4>{{ historico.data | date: 'dd/MM/yyyy HH:mm:ss' }}</h4>
+
+  <div class="itens">
+    <div class="item" *ngFor="let item of historico.itens">
+      <div class="quantidade">{{ item.quantidade }}</div>
+      <div class="nome">{{ item.nome }}</div>
+    </div>
+  </div>
+
+  <div class="acoes">
+    <button (click)="enviar($event, historico.itens, historico.data)">
+      <fa-icon [icon]="faPaperPlane"></fa-icon>
+      Enviar
+    </button>
+  </div>
+</div>

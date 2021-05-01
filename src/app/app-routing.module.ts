@@ -1,22 +1,31 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard';
+
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const routes: Routes = [
   {
-    path: 'admin',
-    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
-    canLoad: [AuthGuard]
-  },
-  {
     path: '',
     redirectTo: '/produtos',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
+  { path: 'produtos', component: ProdutosComponent },
+  { path: 'carrinho', component: CarrinhoComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    BrowserModule,
+    CommonModule,
+    FontAwesomeModule,
+    RouterModule.forRoot(routes),
+  ],
+  exports: [RouterModule],
+  declarations: [ProdutosComponent, CarrinhoComponent],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

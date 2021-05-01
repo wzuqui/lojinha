@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
+import { faHome, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { debounce } from 'src/debounce';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   ativo = false;
+  faHome = faHome;
+  faShoppingCart = faShoppingCart;
 
   public toogle(): void {
-    this.ativo = !this.ativo;
+    debounce(() => {
+      this.ativo = !this.ativo;
+    });
   }
 }
+
