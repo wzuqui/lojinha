@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faTimes, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { debounce } from 'src/debounce';
+import { whatsapp } from 'src/whatsapp';
 
 import { CarrinhoService } from '../carrinho.service';
 
@@ -39,7 +40,7 @@ export class CarrinhoComponent implements OnInit {
       .map((item) => `${item.quantidade} X ${item.nome}`)
       .join(`\r\n`);
 
-    window.open('whatsapp://send?phone=&text=' + encodeURIComponent(texto));
+    whatsapp(texto);
   }
 
   public finalizar(): void {
@@ -59,3 +60,5 @@ export class CarrinhoComponent implements OnInit {
     this.historicos = this.service.historicos;
   }
 }
+
+
