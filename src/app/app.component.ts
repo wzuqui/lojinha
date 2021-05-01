@@ -11,7 +11,7 @@ export class AppComponent {
   ativo = false;
   faHome = faHome;
   faShoppingCart = faShoppingCart;
-  versao = '1.0.2-rc';
+  versao = '1.0.5-rc';
 
   public toogle(): void {
     debounce(() => {
